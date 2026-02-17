@@ -17,6 +17,23 @@
     font-size: 4em;
 }
 
+.button-container>* {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+ul li i {
+    background-color: #1ED760;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 1/1;
+    flex-shrink: 0;
+    font-size: 12px
+}
 
 /* .card .card-body .row p:nth-of-type(3)::before {
     content: "\2022";
