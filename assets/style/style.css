@@ -1,9 +1,27 @@
-.container .card .card-body .row>* {
+body, section {
+    background-color: #121212;
+}
+
+.card-section .card {
+    border: 3px solid rgb(186, 186, 186);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.5;
+}
+
+.card-section .card:hover {
+    scale: 1.05;
+
+    opacity: 1
+}
+
+.card-section .card .card-body .row>* {
     font-size: 0.9em;
     white-space: nowrap;
 }
 
-.container .card .card-body h3 {
+.card-section .card .card-body h3 {
     font-size: 1.25em;
 }
 
@@ -16,6 +34,27 @@
 .album .container div>p~h2 {
     font-size: 4em;
 }
+
+.list-group-item {
+    background-color: transparent !important;
+    color: white;
+    border: none;
+}
+
+.album {
+    background: #82abd9;
+    background: linear-gradient(180deg, rgba(130, 171, 217, 1) 0%, rgba(57, 89, 128, 0.91) 44%, rgba(18, 18, 18, 0.78) 77%);
+}
+
+.album ul li {
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.album ul li:hover {
+    scale: 1.05
+}
+
 
 .button-container>* {
     cursor: pointer;
@@ -32,8 +71,23 @@ ul li i {
     width: 100%;
     aspect-ratio: 1/1;
     flex-shrink: 0;
-    font-size: 12px
+    font-size: 12px;
+    color: black;
 }
+
+.album h2, .album p {
+    color: white
+}
+
+.album>div>div>i {
+    color: white;
+    transition: all 0.2s ease
+}
+
+.album>div>div>i:hover {
+    scale: 1.2
+}
+
 
 /* .card .card-body .row p:nth-of-type(3)::before {
     content: "\2022";
