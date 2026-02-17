@@ -1,0 +1,24 @@
+.container .card .card-body .row>* {
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.container .card .card-body h3 {
+    font-size: 1.25em;
+}
+
+.card img, .album .container div div div img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.album .container div>p~h2 {
+    font-size: 4em;
+}
+
+
+/* .card .card-body .row p:nth-of-type(3)::before {
+    content: "\2022";
+    display: inline-block;
+} */
