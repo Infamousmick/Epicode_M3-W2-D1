@@ -6,20 +6,20 @@ window.addEventListener("load", () => {
   cards.forEach((element) => {
     let titolo = element.querySelector(".card-title").innerText.toLowerCase();
     let artista = element.querySelector("h3").innerText.toLowerCase();
-    let infoParagraphs = element.querySelectorAll(".card-text");
-    let anno = infoParagraphs[0]?.innerText.toLowerCase() || "";
-    let genere = infoParagraphs[1]?.innerText.toLowerCase() || "";
+    let infoSpans = element.querySelectorAll(".info-description");
+    let anno = infoSpans[0]?.innerText.toLowerCase() || "";
+    let genere = infoSpans[1]?.innerText.toLowerCase() || "";
 
     albumArray.push({
       titolo: titolo,
       artista: artista,
       anno: anno,
       genere: genere,
-
       container: element.closest(".col-6"),
     });
   });
 
+  console.log(albumArray);
   const searchForm = document.querySelector("form[role='search']");
 
   searchForm.addEventListener("submit", (e) => {
